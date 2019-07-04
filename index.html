@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="count"></div>
+        <div id="page1">
+            <div class="container">
+                    <div id="paint"></div>
+                    <div id="controller">
+                        <div class="container">
+                            <div class="block" id="pen"></div>
+                            <div class="slider container">
+                                <div class="smallcircle pink"></div>
+                                <input type="range" id="pen_range" min=5 max=50>
+                                <div class="largecircle pink"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="block" id="erase"></div>
+                            <div class="slider container">
+                                <div class="smallcircle white"></div>
+                                <input type="range" id="erase_range" min=5 max=50>
+                                <div class="largecircle white"></div>
+                            </div>
+                        </div>
+                        <!--
+                            <div class="block" id="bucket"></div>
+                        -->
+                        <div class="container">
+                            <div class="circle undo" id="undo"></div>
+                            <div class="circle redo" id="redo"></div>
+                        </div>
+                        <div class="flag next" id="next"></div>
+                    </div>
+                </div>
+        </div>
+        <div id="page2" class="hide">
+            <div class="container">
+                <div id="preview">
+                    <canvas id="canvasP"></canvas>
+                </div>
+                <div id="check" class="container">
+                    <div class="circle undo" id="back"></div>
+                    <div class="flag next" id="confirm"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

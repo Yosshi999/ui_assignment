@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+}
+
+.innerlayer {
+    position: absolute;
+    opacity: 1.0;
+}
+
+#paint:hover .innerlayer {
+    opacity: 0.7;
+}
+
+.mask {
+    z-index: 1;
+    position: absolute;
+}
+
+.block {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: navy;
+}
+
+.pink {
+    background-color: pink;
+}
+.white {
+    background-color: white;
+    border: 1px black solid;
+}
+.smallcircle {
+    margin-top: 22px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.largecircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.slider {
+    margin-left: 5px;
+    display: none;
+}
+.slider.active {
+    display: inherit;
+}
+
+.block.active {
+    background-color: yellow;
+}
+.block:hover {
+    background-color: blue;
+}
+.block.active:hover {
+    background-color: yellow;
+}
+
+#pen {
+    background-image: url(icon/draw.png);
+}
+#erase {
+    background-image: url(icon/erase.png);
+}
+#bucket {
+    background-image: url(icon/bucket.png);
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    margin: 5px;
+}
+.circle:hover {
+    background-color: lightgreen;
+}
+.circle:active {
+    background-color: green;
+}
+.circle.invalid {
+    background-color: gray;
+}
+.undo {
+    background-image: url(icon/undo.png)
+}
+.redo {
+    background-image: url(icon/redo.png)
+}
+
+.flag {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    background: navy;
+  }
+  
+  .flag:before {
+    content: "";
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid navy;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+.next {
+    margin-left: 10px;
+    margin-top: 200px;
+    background-image: url(icon/ok.png);
+}
+.next:hover {
+    background-color: blue;
+}
+.next:active {
+    background-color: red;
+}
+.next:hover:before {
+    border-left: 30px solid blue;
+}
+.next:active:before {
+    border-left: 30px solid red;
+}
+
+
+#page1, #page2 {
+    display: block;
+}
+#page1.hide {
+    display: none;
+}
+#page2.hide {
+    display: none;
+}
+
+#confirm {
+    margin: 0px 20px;
+}
